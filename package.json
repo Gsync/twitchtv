@@ -1,0 +1,22 @@
+{
+  "name": "twitchtv",
+  "version": "1.0.0",
+  "description": "Twitch TV JSON API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gsync/twitchtv.git"
+  },
+  "author": "khuram",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gsync/twitchtv/issues"
+  },
+  "homepage": "https://github.com/Gsync/twitchtv#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
