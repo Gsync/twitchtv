@@ -26,6 +26,11 @@ li {
     background-color: green;
 }
 
+#user p {
+    font-size: 0.8rem;
+    padding-left: 3rem;
+}
+
 img {
     vertical-align: middle;
     display: inline;

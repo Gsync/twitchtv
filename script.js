@@ -13,12 +13,15 @@ userArray.map(e => {
             const userDiv = document.getElementById('user');
             const node = document.createElement("li");
             userDiv.appendChild(node).innerHTML = `
-                <img src="${data[1].logo}">  <a href="${data[1].url}" target="_blank"> <strong>${data[1].display_name}</strong></a> <span>Status: ${status}</span>    
+                <img src="${data[1].logo}">  <a href="${data[1].url}" target="_blank"> <strong>${data[1].display_name}</strong></a>
+                <span>Status: ${status}</span>    
             `;
             if (status === "Online") {
                 node.classList.add("online");
+                const p = document.createElement("p");
+                node.appendChild(p).innerText = `${data[0].stream.channel.status}`;
             }
-            console.log(data[1]);
+            console.log(data[0]);
         })
         .catch(console.error);
 });
